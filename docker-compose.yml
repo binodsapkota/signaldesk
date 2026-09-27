@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    environment:
+      SignalDesk__Mode: ${SIGNALDESK_MODE:-demo}
+      SignalDesk__OpenAIApiKey: ${OPENAI_API_KEY:-}
+      SignalDesk__OpenAIModel: ${OPENAI_MODEL:-gpt-4.1-mini}
+      SignalDesk__OpenAIEndpoint: ${OPENAI_BASE_URL:-}
+
+  web:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - api

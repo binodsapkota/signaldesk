@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/evals/">
+    <Project Path="evals/SignalDesk.Evals/SignalDesk.Evals.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/SignalDesk.Api/SignalDesk.Api.csproj" />
+    <Project Path="src/SignalDesk.Core/SignalDesk.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SignalDesk.Tests/SignalDesk.Tests.csproj" />
+  </Folder>
+</Solution>
